@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}">
+  <title>Covid Detection Model</title>
+  <body class style="background-color:#FFFACD;margin:10px;padding:10px">
+    <div class="page-header" id="banner">
+      <div class="row">
+        <div class="col-lg-8 col-md-7 col-sm-6">
+          <h2><center><b style="font-size:30px;">Covid Detection Model</b></center></h2><br>
+          <p class="lead"><center style="font-size:18px;">Upload the X-Ray image and find out if there is  (<b>Covid</b> or <b>Not</b>) ?</center></p>
+        </div>
+		<br>
+      </div>
+	  <center>
+      <form action="" method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+	  </center>
+    </form>
+    </div>
+    <p style="margin-bottom:2cm;"></p>
+	<center>
+    <div class="row">
+        <div class="col-lg-4">
+          <div class="page-header">
+            <h3 style="font-size:24px;" id="tables"><b><u>Result</u></b></h3>
+          </div>
+          <div class="bs-component">
+            <table class="table table-hover">
+                <tr class="table-active">
+                  <th style="font-size:18px;" scope="col">Image</th>
+                  <th style="font-size:18px;" scope="col">&nbsp &nbsp Prediction</th>
+                </tr>
+                <tr>
+                    <th scope="row"> <img width="150" height="150" src="{{imagesource}}" /> </th>
+                    <td> &nbsp &nbsp &nbsp {{label}} </td>
+                  </tr>
+            </table>
+        </div>
+	<center>
+	</div>
+	<br>
+	<p style="font-size:17px;"><a href="https://drive.google.com/drive/folders/1FibK8HwtD1NyukRxVOnu-4BBWfuovQsP?usp=sharing" target="_blank"> Download sample test images from here </a></p>
+	<footer>
+	  <p style="font-size:17px;"><b>Developed By: TechieRushi (Rushikesh Shinde)</b><br><br>
+	  <a href="https://github.com/techierushi" target="_blank">GitHub Profile</a></p>
+	</footer>
+  </body>
