@@ -55,8 +55,6 @@ fsspec==0.6.2
 future==0.18.2
 gast==0.4.0
 gevent==1.4.0
-gitdb==4.0.7
-GitPython==3.1.17
 glob2==0.7
 google-auth==1.30.0
 google-auth-oauthlib==0.4.4
@@ -96,7 +94,7 @@ MarkupSafe==1.1.1
 matplotlib==3.2.2
 mccabe==0.6.1
 mistune==0.8.4
-mkl-fft==1.0.15
+mkl-fft
 mkl-random==1.1.0
 mkl-service==2.3.0
 mock==4.0.1
